@@ -1,0 +1,32 @@
+{
+  "name": "tinymce-resources",
+  "version": "0.1.0",
+  "description": "TinyMCE resources",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bubobox/tinymce-resources.git"
+  },
+  "keywords": [
+    "tinymce"
+  ],
+  "author": "Ambassify",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bubobox/tinymce-resources/issues"
+  },
+  "homepage": "https://github.com/bubobox/tinymce-resources#readme",
+  "dependencies": {
+    "babel-core": "^5.8.34",
+    "babel-loader": "^5.4.0",
+    "exports-loader": "^0.6.2",
+    "imports-loader": "^0.6.5",
+    "tinymce": "^4.3.1",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
+}
