@@ -9,8 +9,7 @@ editor.setAttribute('id', 'editor');
 editor.innerHTML = "Hello, World!";
 app.appendChild(editor);
 
-tiny.init(Object.assign({
+tiny.init(config({
     selector: '#editor',
-    theme_url: 'http://local.bubobox.dev:8080/node_modules/tinymce/themes/modern/theme.js',
     skin_url: 'http://local.bubobox.dev:8080/node_modules/tinymce/skins/lightgray'
-}, config);
+}));
