@@ -10,6 +10,5 @@ editor.innerHTML = "Hello, World!";
 app.appendChild(editor);
 
 tiny.init(config({
-    selector: '#editor',
-    skin_url: 'http://local.bubobox.dev:8080/node_modules/tinymce/skins/lightgray'
+    selector: '#editor'
 }));

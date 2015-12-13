@@ -21,6 +21,17 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"},
+            { test: /content(\.min)?\.css$/, loader: "css-loader" },
+            {
+                test: /\.css$/,
+                exclude: /content(\.min)?\.css$/,
+                loader: "style-loader!css-loader"
+            },
+            {
+                test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+                loader: 'file-loader'
+            },
+            { test: /\.(jpe?g|gif|png|svg)$/, loader: "file-loader" },
             {
                 // Only apply on tinymce/tinymce
                 include: require.resolve('tinymce/tinymce'),
