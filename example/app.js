@@ -1,6 +1,6 @@
 import tiny from '../src/index';
 import preset from '../src/presets/basic';
-import skin from '../src/skins/lightgray';
+import skin from '../src/skins/manage';
 
 const app = document.createElement('div');
 document.body.appendChild(app);
