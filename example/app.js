@@ -10,4 +10,9 @@ editor.setAttribute('id', 'editor');
 editor.innerHTML = "Hello, World!";
 app.appendChild(editor);
 
-tiny('#editor', preset, skin);
+tiny('#editor', preset, skin, {
+    variables: [
+        { text: 'Entry ID', value: ' {entry_id} ' },
+        { text: 'Widget ID', value: ' {widget_id} ' }
+    ]
+});
