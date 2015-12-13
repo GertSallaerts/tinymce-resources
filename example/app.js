@@ -1,5 +1,6 @@
 import tiny from '../src/index';
 import config from '../src/presets/basic';
+import skin from '../src/skins/lightgray';
 
 const app = document.createElement('div');
 document.body.appendChild(app);
@@ -9,6 +10,6 @@ editor.setAttribute('id', 'editor');
 editor.innerHTML = "Hello, World!";
 app.appendChild(editor);
 
-tiny.init(config({
-    selector: '#editor'
-}));
+const tinyMceConfig = config('#editor', skin);
+
+tiny.init(tinyMceConfig);
