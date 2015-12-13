@@ -1,8 +1,10 @@
 import 'tinymce/tinymce';
 import 'tinymce/themes/modern/theme';
-import 'tinymce/plugins/hr/plugin';
+import 'tinymce/plugins/code/plugin';
 
 export default {
-    plugins: 'hr',
-    toolbar: 'hr'
+    menubar: false,
+    statusbar: false,
+    plugins: 'code',
+    toolbar: 'bold italic underline alignleft aligncenter alignright bullist | code'
 }
