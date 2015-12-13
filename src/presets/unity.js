@@ -2,13 +2,14 @@ import 'tinymce/tinymce';
 import 'tinymce/themes/modern/theme';
 import 'tinymce/plugins/code/plugin';
 import 'tinymce/plugins/link/plugin';
+import '../plugins/blockquote/plugin';
 import '../plugins/variables/plugin';
 
 export default {
     menubar: false,
     statusbar: false,
-    plugins: 'code link',
-    toolbar: 'styleselect | bold italic underline strikethrough | alignleft aligncenter alignright | link | bullist numlist | code',
+    plugins: 'code link blockquote',
+    toolbar: 'styleselect blockquote | bold italic underline strikethrough | alignleft aligncenter alignright | link | bullist numlist | code',
     style_formats: [
         { title: 'Paragraph', block: 'p', remove: 'all' },
         { title: 'Lead Paragraph', block: 'p', classes: 'lead', remove: 'all' },
